@@ -5453,10 +5453,13 @@ div.quickview {
         padding: 17px 0 0 10px;
     }
 
+    /*.navbar-brand img {*/
+    /*    max-width: 100px;*/
+    /*}*/
+    /*custom*/
     .navbar-brand img {
-        max-width: 100px;
+        max-width: 120px;
     }
-
     .navbar-header.isios .navbar-brand img {
         max-width: 60px !important;
     }
