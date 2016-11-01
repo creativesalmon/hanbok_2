@@ -1,0 +1,159 @@
+<!-- Modal Login start -->
+<div class="modal signUpContent fade" id="ModalLogin" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> &times; </button>
+                <h3 class="modal-title-site text-center"> Login to TSHOP </h3>
+            </div>
+            <div class="modal-body">
+
+              <!-- custom -->
+
+              <!-- <a href="/users/sign_out">로그아웃</a> -->
+              <!-- 커스텀 끝 -->
+              <form action="<%= user_session_path %>" method="POST">
+                <div class="form-group login-username">
+                    <div>
+                      <input type="email"  name="user[email]" class="form-control input" placeholder="Enter Username" id="user_email">
+                    </div>
+                </div>
+                <div class="form-group login-password">
+                    <div>
+                      <input type="password"  name="user[password]" class="form-control input" size="20"  placeholder="Password" id="password">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div>
+                        <div class="checkbox login-remember">
+                            <label>
+                                <input name="rememberme" value="forever" checked="checked" type="checkbox">
+                                Remember Me </label>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                      <button type="submit" class="btn  btn-block btn-lg btn-primary" value="LOGIN">로그인</button>
+                    </div>
+                </div>
+            </form>
+                <!--userForm-->
+
+            </div>
+            <div class="modal-footer">
+                <p class="text-center"> Not here before? <a data-toggle="modal" data-dismiss="modal"
+                                                            href="#ModalSignup"> Sign Up. </a> <br>
+                    <a href="forgot-password.html"> Lost your password? </a></p>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+
+    </div>
+    <!-- /.modal-dialog -->
+
+</div>
+<!-- /.Modal Login -->
+
+<!-- Modal Signup start -->
+<div class="modal signUpContent fade" id="ModalSignup" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> &times; </button>
+                <h3 class="modal-title-site text-center"> REGISTER </h3>
+            </div>
+            <div class="modal-body">
+              <form action="<%= user_registration_path %>" method="POST">
+                <div class="control-group"><a class="fb_button btn  btn-block btn-lg " href="#"> SIGNUP WITH
+                    FACEBOOK </a></div>
+                <h5 style="padding:10px 0 10px 0;" class="text-center"> OR </h5>
+
+                <div class="form-group reg-username">
+                    <div>
+                      <input autocomplete="off" class="form-control input" placeholder="이름" type="text" name="user[username]" id="user_username">
+                    </div>
+                </div>
+                <div class="form-group reg-email">
+                    <div>
+                        <input type="email" value="" name="user[email]" class="form-control input" placeholder="Enter Username" id="user_email">
+                    </div>
+                </div>
+                <div class="form-group reg-password">
+                    <div>
+                        <input name="user[password]" id="user_password" class="form-control input" size="20" placeholder="Password"
+                               type="password">
+                    </div>
+                </div>
+                <div class="form-group reg-password">
+                    <div>
+                        <input name="user[password_confirmation]" id="user_password_confirmation" class="form-control input" size="20"  placeholder="password_confirmation"
+                               type="password">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                      <button name="button" class="btn  btn-block btn-lg btn-primary" type="submit">Sign up</button>
+                    </div>
+                </div>
+                <!--userForm-->
+            </form>
+            </div>
+            <div class="modal-footer">
+                <p class="text-center"> Already member? <a data-toggle="modal" data-dismiss="modal" href="#ModalLogin">
+                    Sign in </a></p>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+
+    </div>
+    <!-- /.modal-dialog -->
+
+</div>
+
+
+<div role="dialog" tabindex="-1" id="contact-us" class="modal fade" aria-hidden="true">
+    <div class="modal-dialog modal-xs">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <button aria-hidden="true" data-dismiss="modal" class="close" type="button"> ×</button>
+                <h3 class="modal-title-site text-center"> Selling Enquiries </h3>
+            </div>
+
+
+            <div class="modal-body">
+                <form role="form" lpformnum="24">
+                    <div class="form-group">
+                        <label class="control-label" for="recipient-name">Name:</label>
+                        <input type="text"
+                               data-content="Must be at least 3 characters long, and must only contain letters."
+                               data-trigger="manual" data-placement="top" placeholder="Your Name" id="recipient-name"
+                               class="form-control required">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="sender-email">E-mail:</label>
+                        <input type="text" class="form-control email" placeholder="email@website.com"
+                               data-placement="top" data-trigger="manual" id="sender-email">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="recipient-Phone-Number">Phone Number:</label>
+                        <input type="text" id="recipient-Phone-Number" class="form-control" maxlength="60">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="message-text">Message <span class="text-count">(300) </span>:</label>
+                        <textarea data-trigger="manual" data-placement="top" placeholder="Your message here.."
+                                  id="message-text" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <p id="form-error" class="help-block pull-left error text-danger hide">&nbsp; The form is not
+                            valid. </p>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary btn-lg pull-right btn-block" type="submit">Send message!</button>
+            </div>
+        </div>
+    </div>
+</div>

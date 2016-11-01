@@ -453,8 +453,16 @@
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
+                <% if user_signed_in?%>
+                <li class="hide-xs"><a><%= current_user.username %></a></li>
+
+                <% end%>
                 <li class="hide-xs"><a class="btn btn-nobg  search-trigger"><i class="fa fa-search"> </i></a></li>
-                <li><a data-target="#ModalLogin" data-toggle="modal"> Login <i class="fa fa-user"></i> </a></li>
+                <% if user_signed_in?%>
+                  <li><a href="/users/sign_out"> Logout <i class="fa fa-user"></i> </a></li>
+                <% else %>
+                  <li><a data-target="#ModalLogin" data-toggle="modal"> Login <i class="fa fa-user"></i> </a></li>
+                <% end%>
                 <li class="hide-xs cart-sidebar-toggle"><a> Cart <i
                         class="glyphicon-shopping-cart glyphicon"></i> </a></li>
             </ul>
