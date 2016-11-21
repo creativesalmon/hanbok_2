@@ -185,9 +185,33 @@ a.link,
     font-weight: bold;
     color: #2a2a2a;
 }
+/*커스텀중입니다.*/
+/*.panel-default > .panel-heading {
+    border-top: 4px solid #4ec67f;
+}*/
+
 
 .panel-default > .panel-heading {
-    border-top: 4px solid #4ec67f;
+  /*border-style: solid;
+border-width: 6px 0px 0px 0px;
+-moz-border-image: url(/images/borer_top.png) 21 15 63 12 repeat stretch;
+-webkit-border-image: url(/images/borer_top.png) 21 15 63 12 repeat stretch;
+-o-border-image: url(/images/borer_top.png) 21 15 63 12 repeat stretch;
+border-image: url(/images/borer_top.png) 21 15 63 12 fill repeat stretch;*/
+
+border-style: solid;
+border-width: 10px 0px 0px;
+-moz-border-image: url(/images/borer_top.png) 22 15 72 12 repeat stretch;
+-webkit-border-image: url(/images/borer_top.png) 22 15 72 12 repeat stretch;
+-o-border-image: url(/images/borer_top.png) 22 15 72 12 repeat stretch;
+border-image: url(/images/borer_top.png) 22 15 72 12 fill repeat stretch;
+/*border-style: solid;
+border-width: 14px 0px 0px;
+-moz-border-image: url(/images/borer_top.png) 9 15 63 12 repeat stretch;
+-webkit-border-image: url(/images/borer_top.png) 9 15 63 12 repeat stretch;
+-o-border-image: url(/images/borer_top.png) 9 15 63 12 repeat stretch;
+border-image: url(/images/borer_top.png) 9 15 63 12 fill repeat stretch;*/
+
 }
 
 .nav-tabs {

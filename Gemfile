@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
 
 gem 'devise'
+# 로컬로 작업할때 사용
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
+# 이거는 해로쿠 사용할 때
 # gem 'pg',      :group => :production
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'

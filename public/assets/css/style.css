@@ -21,12 +21,12 @@
 17.  ABOUT PAGE
 18.  CONTACT US PAGE
 19.  PRODUCT MODAL [Qick View]
-20.  SUBSCRIBE | PROMOTIONAL MODAL 
+20.  SUBSCRIBE | PROMOTIONAL MODAL
 21.  WEB PAGE PROGRESS BAR CSS
 22.  CUSTOM RESPONSIVE
 
 /* =============================================================== */
-/* IMPORT CSS 
+/* IMPORT CSS
 /* =============================================================== */
 
 @import url("owl.carousel.css");
@@ -1238,7 +1238,7 @@ legend {
 }
 
 /* =============================================================== */
-/* HOME PAGE BOXES SLIDER 
+/* HOME PAGE BOXES SLIDER
 /* =============================================================== */
 
 .box-pagination {
@@ -1614,7 +1614,7 @@ h1.bolder-style.dark, h1.bolder-style.dark a {
 }
 
 /* =============================================================== */
-/* HOME PAGE SLIDER  
+/* HOME PAGE SLIDER
 /* =============================================================== */
 
 .sliderImg {
@@ -2050,7 +2050,7 @@ h1.bolder-style.dark, h1.bolder-style.dark a {
 /*  // Style   2  end*/
 
 /* =============================================================== */
-/* HOME PAGE LOOK 2  
+/* HOME PAGE LOOK 2
 /* =============================================================== */
 
 .home-intro h2 {
@@ -2285,7 +2285,7 @@ h1.bolder-style.dark, h1.bolder-style.dark a {
 /* ---------- // Home look 2 end //--------*/
 
 /* =============================================================== */
-/* HOME PAGE LOOK 3  
+/* HOME PAGE LOOK 3
 /* =============================================================== */
 
 #imageShowCase {
@@ -3269,7 +3269,7 @@ h5.parallaxSubtitle {
 .headerOffset {
     /*no_custom*/
     /*padding-top: 120px;*/
-    
+
     padding-top: 80px;
 }
 
@@ -3429,9 +3429,9 @@ h5.parallaxSubtitle {
     padding-top: 20px;
     margin-top: 0;
 }
-
+/*커스텀*/
 .nav-stacked > li {
-    border-bottom: solid 1px #eee;
+    /*border-bottom: solid 1px #eee;*/
 }
 
 .nav-stacked > li a {
